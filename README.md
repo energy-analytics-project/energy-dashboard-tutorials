@@ -3,29 +3,28 @@ Data science tutorials using the Energy Dashboard data sets.
 
 ## Getting Started
 
-Here's how I got started.
+### Pandas + Python
+
+If you don't have a solid grasp of Pandas and Python, start here:
 
 1. Watch Brandon Rhodes PyCon 2015 Talk
 1. Solve the Excercise problems, one notebook at a time
 1. Backup, watch Rhodes' video again, continue with Excercises
-1. Redo excersises, using pandasql, compare, contrast
 1. Go through VanderPlas' book, do the problems
 
-Now that I have some understanding of the tooling and concepts, tackle
-the [Energy Dashboard datasets](https://github.com/energy-analytics-project/energy-dashboard/blob/master/docs/datasets.md).
+### Energy Dashboard Tutorials
 
-## Energy Dashboard Tutorials
-
-These tutorials assume you have some familiarity with the basics of Pandas, Python, etc. I'm
-going to do my best _not_ to repeat what Brandon Rhodes has provided, but instead take up where
-he left off, and target exploration of the Energy Dashboard data sets.
-
-TODO: start writing tuts
+These tutorials assume you have an understanding of the tooling and concepts (see Pandas +
+Python above). The focus here is to show you how to examine and query the [Energy
+Dashboard datasets](https://github.com/energy-analytics-project/energy-dashboard/blob/master/docs/datasets.md)
+to produce meaningful analyses and reports.
 
 * [TUT 01 : NYI]()
 
 
 ## Links
+
+These were all useful for me when getting started with Pandas...
 
 ### Tutorials
 
@@ -44,9 +43,28 @@ TODO: start writing tuts
 ### Libraries
 
 * [jupyterlab-vim](https://github.com/jwkvam/jupyterlab-vim)
-* [pandasql](https://pypi.org/project/pandasql/)
-* [pandasql](https://github.com/yhat/pandasql/)
-* [pandasql](https://community.alteryx.com/t5/Data-Science-Blog/pandasql-Make-python-speak-SQL/ba-p/138435)
+
+### PandSql
+
+I really really wanted to use [pandasql](https://pypi.org/project/pandasql/).
+It's SQL! It uses Sqlite! It'll be awesome, right!
+
+Unfortuntely, the project appears to be abandon-ware. More importantly, it's
+slow. I tested `pandasql` on Brandon Rhodes' tutorials, expecting to blaze
+through them all in short order. My sense of delight and ease from writing SQL
+was soon swamped by the performance issues. I stopped when fairly simple
+queries were taking between 10 and 100x longer when using `pandasql` instead of
+direct dataframe manipulations.
+
+Also, I tried both the old style invocation:
+
+    pdf = lambda q: sqldf(q, globals())
+
+...and the new style:
+
+    pdf = PandaSQL('sqlite:///:memory:', persist=True)
+
+I detected no real difference. Bummer. RIP `pandasql`.
 
 ### Books
 
