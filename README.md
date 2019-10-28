@@ -7,10 +7,17 @@ Data science tutorials using the Energy Dashboard data sets.
 
 If you don't have a solid grasp of Pandas and Python, start here:
 
-1. Watch Brandon Rhodes PyCon 2015 Talk
-1. Solve the Excercise problems, one notebook at a time
-1. Backup, watch Rhodes' video again, continue with Excercises
-1. Go through VanderPlas' book, do the problems
+* Watch Brandon Rhodes PyCon 2015 Talk
+* Solve Brandon's excercise problems, one notebook at a time
+* Backup, watch Rhodes' video again, continue solving the excercises
+* Go through VanderPlas' book, replicate every single line of code
+
+If you don't remember stats, Sal Khan is my 'go-to' resource for all
+things academic:
+
+* Watch the Khan Academy videos on statistics
+
+This is just how I learned Pandas and brushed up on stats. YMMV.
 
 ### Energy Dashboard Tutorials
 
@@ -36,9 +43,15 @@ These were all useful for me when getting started with Pandas...
 
 ### Videos
 
+#### Pandas
+
 * [PandasDocs](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html)
 * [Brandon Rhodes PyCon2015](https://www.youtube.com/watch?v=5JnMutdy6Fw)
 * [MultiIndexs](https://www.youtube.com/watch?v=kP-0ET0V5Tc)
+
+#### Stats
+
+* [Khan Academy Statistics and Probability](https://www.khanacademy.org/math/statistics-probability)
 
 ### Libraries
 
