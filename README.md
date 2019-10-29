@@ -79,6 +79,12 @@ Also, I tried both the old style invocation:
 
 I detected no real difference. Bummer. RIP `pandasql`.
 
+### Sqlite3
+
+* https://dba.stackexchange.com/questions/40656/how-to-properly-format-sqlite-shell-output
+* https://stackoverflow.com/questions/685206/how-to-get-a-list-of-column-names
+
+
 ### Books
 
 * [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
