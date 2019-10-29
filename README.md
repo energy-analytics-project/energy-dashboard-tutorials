@@ -1,37 +1,64 @@
 # energy-dashboard-tutorials
 Data science tutorials using the Energy Dashboard data sets.
 
-## Getting Started
+
+## Energy Dashboard Tutorials
+
+These tutorials assume you have an understanding of the tooling and concepts
+(see `Background` section below). The focus of these tutorials is less on how
+to use Pandas and more on how to examine and query the [Energy Dashboard
+datasets](https://github.com/energy-analytics-project/energy-dashboard/blob/master/docs/datasets.md)
+to produce meaningful analyses and reports.
+
+* [TUT 01 : Wind and Solar](./tutorial-01.ipynb)
+
+
+## Quick Start
+
+### Dependencies
+
+There's one main dependency, and that's `conda`...
+
+* [conda](https://www.anaconda.com/distribution/)
+
+If you do not have 'git' installed, then you can retrieve this tutorial by
+clicking on the [download
+link](https://github.com/ToddG/energy-dashboard-tutorials/archive/master.zip).
+
+### Instructions
+
+"""bash
+conda create -n ed python=3 numpy jupyter pandas matplotlib seaborn
+conda activate ed
+git clone git@github.com:ToddG/energy-dashboard-tutorials.git
+cd energy-dashboard-tutorials
+./build.sh
+jupyter-lab
+"""
+
+The `build.sh` will download, extract, and test the databases that we will
+be using in these tutorials.
+
+## Background
+
+If you don't have a solid grasp of Pandas and Python, start here.
 
 ### Pandas + Python
 
-If you don't have a solid grasp of Pandas and Python, start here:
-
-* Watch Brandon Rhodes PyCon 2015 Talk
-* Solve Brandon's excercise problems, one notebook at a time
+* Watch Brandon Rhodes' PyCon 2015 Talk
+* Solve Rhodes' excercise problems, one notebook at a time
 * Backup, watch Rhodes' video again, continue solving the excercises
-* Go through VanderPlas' book, replicate every single line of code
+* Go through VanderPlas' book and, as much as you can, replicate every single line of code
+* Go back, watch Rhodes' video again 
 
 If you don't remember stats, Sal Khan is my 'go-to' resource for all
 things academic:
 
 * Watch the Khan Academy videos on statistics
 
-This is just how I learned Pandas and brushed up on stats. YMMV.
-
-### Energy Dashboard Tutorials
-
-These tutorials assume you have an understanding of the tooling and concepts (see Pandas +
-Python above). The focus here is to show you how to examine and query the [Energy
-Dashboard datasets](https://github.com/energy-analytics-project/energy-dashboard/blob/master/docs/datasets.md)
-to produce meaningful analyses and reports.
-
-* [TUT 01 : NYI]()
-
+This is just how _I_ learned Pandas and brushed up on stats. YMMV.
 
 ## Links
-
-These were all useful for me when getting started with Pandas...
 
 ### Tutorials
 
@@ -48,6 +75,12 @@ These were all useful for me when getting started with Pandas...
 * [PandasDocs](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html)
 * [Brandon Rhodes PyCon2015](https://www.youtube.com/watch?v=5JnMutdy6Fw)
 * [MultiIndexs](https://www.youtube.com/watch?v=kP-0ET0V5Tc)
+* https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621
+* https://ourcodingclub.github.io/2019/01/07/pandas-time-series.html
+* https://pypi.org/project/pandasql/
+* http://earthpy.org/pandas-basics.html
+* https://chrisalbon.com/python/data_wrangling/pandas_time_series_basics/
+* https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html
 
 #### Stats
 
@@ -88,3 +121,8 @@ I detected no real difference. Bummer. RIP `pandasql`.
 ### Books
 
 * [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
+
+
+### Energy Sector Resources
+* http://www.ercot.com/about
+* http://www.caiso.com/participate/Pages/LearningCenter/default.aspx
