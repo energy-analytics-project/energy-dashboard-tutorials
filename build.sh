@@ -22,14 +22,11 @@ function download()
 
 function verify()
 {
-    TARGET="$1"
-    DB_NAME="$TARGET"_00.db
+    DB_NAME=$1
     TABLE_NAME=$2
     echo "---------------------------------------------------------------------"
-    echo "Verifying: $TABLE_NAME"
+    echo "Verifying: $DB_NAME.$TABLE_NAME"
     echo "---------------------------------------------------------------------"
-    echo "Tables:"
-    sqlite3 $DB_NAME ".tables"
     echo "Table Info: $TABLE_NAME"
     sqlite3 $DB_NAME "PRAGMA table_info($TABLE_NAME)"
     echo "Table count(*): $TABLE_NAME"
@@ -40,12 +37,21 @@ function verify()
 
 function retrieve()
 {
-    download $1
-    verify $1 $2
+    TARGET=$1; shift
+    DB_NAME="$TARGET"_00.db
+    echo "====================================================================="
+    echo "$TARGET"
+    echo "====================================================================="
+
+    download $TARGET
+    tables=$(sqlite3 $DB_NAME ".tables" | tr -s ' ' '\n')
+    for table in $tables; do
+        verify $DB_NAME $table
+    done
 }
 
 # -----------------------------------------------------------------------------
 # CAISO OASIS Reports
 # -----------------------------------------------------------------------------
-retrieve data-oasis-ene-wind-solar-summary report_data
-retrieve data-oasis-sld-ren-fcst-dam report_data
+retrieve data-oasis-ene-wind-solar-summary
+retrieve data-oasis-sld-ren-fcst-dam
