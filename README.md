@@ -124,5 +124,11 @@ I detected no real difference. Bummer. RIP `pandasql`.
 
 
 ### Energy Sector Resources
-* http://www.ercot.com/about
+* https://www.nwcouncil.org/reports/seventh-power-plan
+* https://www.theice.com/products/6590362/CAISO-NP-15-Day-Ahead-Peak-Fixed-Price-Future
 * http://www.caiso.com/participate/Pages/LearningCenter/default.aspx
+* http://www.caiso.com/pricemap/Pages/default.aspx
+* http://www.caiso.com/TodaysOutlook/Pages/prices.aspx
+* http://www.caiso.com/TodaysOutlook/Pages/supply.aspx
+* http://www.energybc.ca/index.html
+* http://www.ercot.com/about
