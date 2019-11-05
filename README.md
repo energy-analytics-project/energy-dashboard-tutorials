@@ -1,7 +1,6 @@
 # energy-dashboard-tutorials
 Data science tutorials using the Energy Dashboard data sets.
 
-
 ## Energy Dashboard Tutorials
 
 These tutorials assume you have an understanding of the tooling and concepts
@@ -10,8 +9,8 @@ to use Pandas and more on how to examine and query the [Energy Dashboard
 datasets](https://github.com/energy-analytics-project/energy-dashboard/blob/master/docs/datasets.md)
 to produce meaningful analyses and reports.
 
-* [TUT 01 : Wind and Solar](./tutorial-01.ipynb)
-
+* [Tutorial 01 : Renewable Wind and Solar](./tutorial-01.ipynb)
+* Tutorial 02 : work in process
 
 ## Quick Start
 
@@ -27,17 +26,19 @@ link](https://github.com/ToddG/energy-dashboard-tutorials/archive/master.zip).
 
 ### Instructions
 
-"""bash
+```bash
 conda create -n ed python=3 numpy jupyter pandas matplotlib seaborn statsmodels
 conda activate ed
 git clone git@github.com:ToddG/energy-dashboard-tutorials.git
 cd energy-dashboard-tutorials
 ./build.sh
 jupyter-lab
-"""
+```
 
 The `build.sh` will download, extract, and test the databases that we will
 be using in these tutorials.
+
+----
 
 ## Background
 
@@ -58,9 +59,9 @@ things academic:
 
 This is just how _I_ learned Pandas and brushed up on stats. YMMV.
 
-## Links
+### Links
 
-### Tutorials
+#### Tutorials
 
 * [Brandon Rhodes PyCon 2015 Tutorial](https://github.com/brandon-rhodes/pycon-pandas-tutorial)
 * [Errata for BR Tut #1](https://stackoverflow.com/questions/45916325/series-object-has-no-attribute-order#45993193)
@@ -68,9 +69,9 @@ This is just how _I_ learned Pandas and brushed up on stats. YMMV.
 
 (Brandon Rhodes' video errata due to changes in Pandas since 2015)
 
-### Videos
+#### Videos
 
-#### Pandas
+##### Pandas
 
 * [PandasDocs](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html)
 * [Brandon Rhodes PyCon2015](https://www.youtube.com/watch?v=5JnMutdy6Fw)
@@ -82,15 +83,15 @@ This is just how _I_ learned Pandas and brushed up on stats. YMMV.
 * https://chrisalbon.com/python/data_wrangling/pandas_time_series_basics/
 * https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html
 
-#### Stats
+##### Stats
 
 * [Khan Academy Statistics and Probability](https://www.khanacademy.org/math/statistics-probability)
 
-### Libraries
+#### Libraries
 
 * [jupyterlab-vim](https://github.com/jwkvam/jupyterlab-vim)
 
-### PandSql
+#### PandSql
 
 I really really wanted to use [pandasql](https://pypi.org/project/pandasql/).
 It's SQL! It uses Sqlite! It'll be awesome, right!
@@ -112,18 +113,18 @@ Also, I tried both the old style invocation:
 
 I detected no real difference. Bummer. RIP `pandasql`.
 
-### Sqlite3
+#### Sqlite3
 
 * https://dba.stackexchange.com/questions/40656/how-to-properly-format-sqlite-shell-output
 * https://stackoverflow.com/questions/685206/how-to-get-a-list-of-column-names
 
 
-### Books
+#### Books
 
 * [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
 
 
-### Energy Sector Resources
+#### Energy Sector Resources
 * https://www.nwcouncil.org/reports/seventh-power-plan
 * https://www.theice.com/products/6590362/CAISO-NP-15-Day-Ahead-Peak-Fixed-Price-Future
 * http://www.caiso.com/participate/Pages/LearningCenter/default.aspx
