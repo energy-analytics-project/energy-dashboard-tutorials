@@ -55,3 +55,4 @@ function retrieve()
 # -----------------------------------------------------------------------------
 retrieve data-oasis-ene-wind-solar-summary
 retrieve data-oasis-sld-ren-fcst-dam
+retrieve data-oasis-daily-renewables-output
