@@ -29,7 +29,7 @@ link](https://github.com/ToddG/energy-dashboard-tutorials/archive/master.zip).
 ```bash
 conda create -n ed python=3 numpy jupyter pandas matplotlib seaborn statsmodels jupyterlab pandasql
 conda activate ed
-git clone git@github.com:ToddG/energy-dashboard-tutorials.git
+git clone https://github.com/ToddG/energy-dashboard-tutorials.git
 cd energy-dashboard-tutorials
 ./build.sh
 jupyter-lab
