@@ -27,7 +27,7 @@ link](https://github.com/ToddG/energy-dashboard-tutorials/archive/master.zip).
 ### Instructions
 
 ```bash
-conda create -n ed python=3 numpy jupyter pandas matplotlib seaborn statsmodels jupyterlab pandasql
+conda create -n ed python=3 numpy jupyter pandas matplotlib seaborn statsmodels jupyterlab
 conda activate ed
 git clone https://github.com/ToddG/energy-dashboard-tutorials.git
 cd energy-dashboard-tutorials
